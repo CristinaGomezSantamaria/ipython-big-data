@@ -9,7 +9,8 @@ import pexpect
 import re
 import pandas
 
-PIGPATH = 'pig -4 log4j.properties -x local '
+# PIGPATH = 'pig -4 log4j.properties -x local '
+PIGPATH = 'pig -4 log4j.properties  '
 PIGPROMPT = 'grunt> '
 PIGCONT = '>> '
 
@@ -28,7 +29,8 @@ class bdMagic(Magics):
 
     @line_magic
     def timeout(self, t):
-        self.timeout = t
+        print(t)
+        self.timeout = int(t)
     
     ##
     ## Apache Pig

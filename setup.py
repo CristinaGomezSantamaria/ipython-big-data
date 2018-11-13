@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='bigdata',
-      version='0.0.1',
+      version='0.0.2',
       description='IPython magic for running Apache tools for Big Data',
       long_description='IPython magic for running Pig, Hive, Drill inside a Jupyter Notebook',
       classifiers=[
@@ -22,7 +22,5 @@ setup(name='bigdata',
       author_email='jdvelasq@unal.edu.co',
       license='MIT',
       packages=['bigdata'],
-#      test_suite='nose.collector',
-#      tests_require=['nose'],
       include_package_data=True,
       zip_safe=False)

@@ -28,7 +28,7 @@ def pypi():
 def local():
     """local install"""
     sh("pip uninstall bdmagic")
-    sh("python setup.py install develop")
+    sh("python setup.py install")
 
 
 @task
